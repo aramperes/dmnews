@@ -14,7 +14,7 @@
             loadingpic.Size = New Point(298, 193)
             loadingpic.Location = New Point(255, 200)
             loadingpic.Image = Image.FromFile(Gfx.err408)
-            GuiMain.status.Text = "Erreur 408: Connexion impossible."
+            GuiMain.status.Text = "Erreur 408: Connexion impossible!"
         End If
     End Sub
     Shared Function InternetConnection() As Boolean
