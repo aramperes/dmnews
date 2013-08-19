@@ -1,0 +1,1 @@
+DM News est une application en développement par DM Apps. Il s'agit d'un journal hebdomadaire numérique regroupant des articles divers (nouvelles, annonces locales, etc.).
