@@ -1,7 +1,9 @@
 ﻿'Aram Peres, le 18 août 2013
 'Information sur cette classe: Éléments du Gui de la forme principale, main.vb.
 Public Class GuiMain
+    Public Shared WithEvents loadingpic As New PictureBox
     Public Shared WithEvents status As New Label
+
     'Gui lors de l'initialisation du programme.
     Shared Sub init()
         main.Text = strings.Title & strings.Version
@@ -12,6 +14,12 @@ Public Class GuiMain
         main.FormBorderStyle = FormBorderStyle.FixedSingle
         main.BackgroundImageLayout = ImageLayout.Stretch
         loading.load()
+        main.Controls.Add(loadingpic)
+        loadingpic.Visible = True
+        loadingpic.Image = Image.FromFile(Gfx.loading)
+        loadingpic.Size = New Point(100, 100)
+        loadingpic.SizeMode = PictureBoxSizeMode.StretchImage
+        loadingpic.Location = New Point(340, 200)
         status.Visible = True
         status.Location = New Point(10, 540)
         status.ForeColor = Color.White
@@ -19,4 +27,7 @@ Public Class GuiMain
         status.BringToFront()
         main.Controls.Add(status)
     End Sub
+
+
+
 End Class

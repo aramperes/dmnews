@@ -7,4 +7,5 @@ Public Class strings
     Public Shared DMNewsDir = "\DMApps\DMNews\"
     Public Shared GfxDir = "\DMApps\DMNews\" & Version & "\gfx\"
     Public Shared loadingError = "Une erreur s'est produite lors de l'initialisation. Des dossiers sont manquants. Une réinstallation est nécessaire!"
+    Public Shared connexionprog = "Connexion en cours... "
 End Class
