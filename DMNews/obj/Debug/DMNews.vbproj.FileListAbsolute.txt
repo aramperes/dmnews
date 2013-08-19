@@ -1,0 +1,9 @@
+D:\VB\DMNews\DMNews\bin\Debug\DMNews.exe.config
+D:\VB\DMNews\DMNews\bin\Debug\DMNews.exe
+D:\VB\DMNews\DMNews\bin\Debug\DMNews.pdb
+D:\VB\DMNews\DMNews\bin\Debug\DMNews.xml
+D:\VB\DMNews\DMNews\obj\Debug\DMNews.Resources.resources
+D:\VB\DMNews\DMNews\obj\Debug\DMNews.vbproj.GenerateResource.Cache
+D:\VB\DMNews\DMNews\obj\Debug\DMNews.exe
+D:\VB\DMNews\DMNews\obj\Debug\DMNews.xml
+D:\VB\DMNews\DMNews\obj\Debug\DMNews.pdb
