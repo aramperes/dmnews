@@ -3,6 +3,7 @@
 Public Class GuiMain
     Public Shared WithEvents loadingpic As New PictureBox
     Public Shared WithEvents status As New Label
+    Public Shared WithEvents shadowpic As New PictureBox
 
     'Gui lors de l'initialisation du programme.
     Shared Sub init()
@@ -21,11 +22,17 @@ Public Class GuiMain
         loadingpic.SizeMode = PictureBoxSizeMode.StretchImage
         loadingpic.Location = New Point(340, 200)
         status.Visible = True
-        status.Location = New Point(10, 540)
+        status.Location = New Point(7, 540)
         status.ForeColor = Color.White
         status.Size = New Point(900, 900)
-        status.BringToFront()
         main.Controls.Add(status)
+        main.Controls.Add(shadowpic)
+        shadowpic.Visible = False
+        shadowpic.Image = Image.FromFile(Gfx.shadow)
+        shadowpic.Size = New Point(loading.var1, loading.var2)
+        shadowpic.SizeMode = PictureBoxSizeMode.StretchImage
+        shadowpic.Location = New Point(120, 10)
+        status.SendToBack()
     End Sub
 
 

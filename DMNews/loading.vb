@@ -46,7 +46,10 @@ start:
         If InternetConnection() = True Then
             startloading()
         Else
-
+            GuiMain.loadingpic.Size = New Point(298, 193)
+            GuiMain.loadingpic.Location = New Point(255, 200)
+            GuiMain.loadingpic.Image = Image.FromFile(Gfx.err408)
+            GuiMain.status.Text = "Erreur 408: Connexion impossible!"
         End If
     End Sub
 
@@ -177,6 +180,7 @@ start:
         page9.Visible = True
         page10.Visible = True
         page1.BringToFront()
+        GuiMain.shadowpic.Visible = True
     End Sub
 
 End Class
